@@ -20,6 +20,11 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "paths": {
+    "@components/*": ["src/components/*"],
+    "@assets/*": ["src/assets/*"],
+  },
+  "allowSyntheticDefaultImports": true,
   "include": [
     "src"
   ]
