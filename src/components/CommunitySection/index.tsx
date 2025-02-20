@@ -1,22 +1,15 @@
-import styles from './Header.module.css';
-import { ReactComponent as LineDot } from '../../../assets/line-dot.svg';
-import { ReactComponent as Instagram } from '../../../assets/instagram-icon.svg';
-import { ReactComponent as TelegramIcon } from '../../../assets/telegram-icon.svg';
-import { ReactComponent as TwitterIcon } from '../../../assets/twitter-icon.svg';
-import { ReactComponent as BigStarIcon } from '../../../assets/big-star-icon.svg';
-import { ReactComponent as BeatIcon } from '../../../assets/beat-image.svg';
-import { ReactComponent as LeftIcon } from '../../../assets/left-coin.svg';
-import { ReactComponent as RightIcon } from '../../../assets/right-coin.svg';
-import { SocialSocialCard } from './SocialIconCard';
+import styles from './CommunitySection.module.css';
+import { ReactComponent as LineDot } from '../../assets/line-dot.svg';
+import { ReactComponent as Instagram } from '../../assets/instagram-icon.svg';
+import { ReactComponent as TelegramIcon } from '../../assets/telegram-icon.svg';
+import { ReactComponent as TwitterIcon } from '../../assets/twitter-icon.svg';
+import { ReactComponent as BigStarIcon } from '../../assets/big-star-icon.svg';
+import { ReactComponent as BeatIcon } from '../../assets/beat-image.svg';
+import { ReactComponent as LeftIcon } from '../../assets/left-coin.svg';
+import { ReactComponent as RightIcon } from '../../assets/right-coin.svg';
+import { SocialSocialCard } from '../SocialCard';
 
-
-interface CardProps {
-    imageComponent: React.ReactNode;
-    title: string;
-    subTitle: string;
-}
-
-export const FootSection = () => {
+export const CommunitySection = () => {
     return (
         <div className={styles.footSection}>
             <div className={styles.footSectionContainer}>

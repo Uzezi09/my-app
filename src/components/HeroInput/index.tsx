@@ -1,5 +1,5 @@
-import { ReactComponent as QwickLogo } from '../../../assets/qwikdrip-icon.svg';
-import styles from './Header.module.css';
+import { ReactComponent as QwickLogo } from '../../assets/qwikdrip-icon.svg';
+import styles from './HeroInput.module.css';
 
 export const HeroInput = () => {
     return (

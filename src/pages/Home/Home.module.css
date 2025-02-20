@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.heroTop {
+    display: flex;
+    justify-content: center;
+    padding-block: 16px;
+}
+
+.landingContents {
+    display: flex;
+    padding: 100px 140px;
+    gap: 110px
+}
+
+.waitlistContent {
+    padding: 0px 140px;
+}
+
+.image {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    border-radius: 100px;
+    background: linear-gradient(0deg, rgba(102, 0, 255, 0.05), rgba(102, 0, 255, 0.05)),
+        radial-gradient(58.43% 67.71% at 50% 59.38%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 100%);
+}

@@ -1,4 +1,4 @@
-import styles from './Header.module.css';
+import styles from './HomeCard.module.css';
 
 interface CardProps {
     imageComponent: React.ReactNode;
@@ -6,7 +6,7 @@ interface CardProps {
     subTitle: string;
 }
 
-export const Card: React.FC<CardProps> = ({ imageComponent, title, subTitle }) => {
+export const HomeCard: React.FC<CardProps> = ({ imageComponent, title, subTitle }) => {
     return (
         <div className={styles.card}>
             <div className={styles.circle}>

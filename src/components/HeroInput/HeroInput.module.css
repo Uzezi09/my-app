@@ -1,0 +1,55 @@
+.border {
+    width: 100%;
+    max-width: 936px;
+    padding: 16px 16px 16px 24px;
+    background: #0D031D;
+    border-radius: 38px;
+    border: 1px solid transparent;
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.21),
+        0px 3px 7px 0px #0000001A;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentLeft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px
+}
+
+.qwikText {
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button {
+    background: url('../../assets/button-bg.jpg') no-repeat center center;
+    background-size: cover;
+    /* Ensures the image covers the button */
+
+    color: #0A0A0F;
+    /* Ensures text is readable */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+
+    /* Border & Shadow */
+    border-top: 1px solid #FFFFFF30;
+    box-shadow: 0px 0px 0.8px 0px #225D77B5;
+
+    /* Text Shadow */
+    text-shadow: 0px 0px 1px #0000002E;
+}

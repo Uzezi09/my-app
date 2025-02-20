@@ -1,4 +1,4 @@
-import styles from './Header.module.css';
+import styles from './SocialCard.module.css';
 
 interface SocialCardProps {
     imageComponent: React.ReactNode;
