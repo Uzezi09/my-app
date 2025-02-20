@@ -13,8 +13,7 @@ export const WaitListHeader = () => {
             <div className={styles.content}>
                 <h1 className={styles.title}>Join the waitlist</h1>
                 <div>
-                    <p className={styles.subText}>Join our exclusive waitlist today and be notified when we </p>
-                    <p className={styles.subText}>launch. Early members will receive special perks and features.</p>
+                    <p className={styles.subText}>Join our exclusive waitlist today and be notified when we launch. Early members will receive special perks and features.</p>
                 </div>
             </div>
         </div>
