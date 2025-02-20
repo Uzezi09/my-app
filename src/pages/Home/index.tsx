@@ -10,6 +10,7 @@ import styles from './Home.module.css'
 import { HeroInput } from '../../components/HeroInput';
 import { HomeCard } from '../../components/HomeCard';
 import { CommunitySection } from '../../components/CommunitySection';
+import { Footer } from '../../components/Footer';
 
 export const Home = () => {
     return (
@@ -68,9 +69,7 @@ export const Home = () => {
             <div className={styles.waitlistContent}>
                 <CommunitySection />
             </div>
-            <div>
-            {/* <LightBall /> */}
-            </div>
+          <Footer />
         </div>
     )
 }

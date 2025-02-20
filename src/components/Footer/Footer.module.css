@@ -1,0 +1,20 @@
+.footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.footer p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Adjust based on background */
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+}
