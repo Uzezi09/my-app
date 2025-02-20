@@ -11,6 +11,7 @@ import { HeroInput } from '../../components/HeroInput';
 import { HomeCard } from '../../components/HomeCard';
 import { CommunitySection } from '../../components/CommunitySection';
 import { Footer } from '../../components/Footer';
+import { HeroSection } from '../../components/HeroSection';
 
 export const Home = () => {
     return (
@@ -18,58 +19,61 @@ export const Home = () => {
             <div className={styles.heroTop}>
                 <HeroInput />
             </div>
-            <div className={styles.landingContents}>
-                <HomeCard
-                    title='AI-Powered Style Analysis'
-                    subTitle='Get personalized style insights and recommendations based on your preferences and fashion choices.'
-                    imageComponent={
-                        <Star />
-                    }
-                />
-                <div className={styles.image}>
-                    <AiImage />
+            <div className={styles.heroContent}>
+                <HeroSection />
+                <div className={styles.landingContents}>
+                    <HomeCard
+                        title='AI-Powered Style Analysis'
+                        subTitle='Get personalized style insights and recommendations based on your preferences and fashion choices.'
+                        imageComponent={
+                            <Star />
+                        }
+                    />
+                    <div className={styles.image}>
+                        <AiImage />
+                    </div>
                 </div>
-            </div>
-            <div className={styles.landingContents}>
-                <HomeCard
-                    title='Smart Wardrobe'
-                    subTitle='Get personalized style insights and recommendations based on your preferences and fashion choices.'
-                    imageComponent={
-                        <SmartIcon />
-                    }
-                />
-                <div className={styles.image}>
-                    <SmartImage />
+                <div className={styles.landingContents}>
+                    <HomeCard
+                        title='Smart Wardrobe'
+                        subTitle='Get personalized style insights and recommendations based on your preferences and fashion choices.'
+                        imageComponent={
+                            <SmartIcon />
+                        }
+                    />
+                    <div className={styles.image}>
+                        <SmartImage />
+                    </div>
                 </div>
-            </div>
-            <div className={styles.landingContents}>
-                <HomeCard
-                    title='Climb Leaderboards'
-                    subTitle='Active creators earn bonus rewards and exclusive partnership opportunities.'
-                    imageComponent={
-                        <ClimbIcon />
-                    }
-                />
-                <div className={styles.image}>
-                    <ClimbImage />
+                <div className={styles.landingContents}>
+                    <HomeCard
+                        title='Climb Leaderboards'
+                        subTitle='Active creators earn bonus rewards and exclusive partnership opportunities.'
+                        imageComponent={
+                            <ClimbIcon />
+                        }
+                    />
+                    <div className={styles.image}>
+                        <ClimbImage />
+                    </div>
                 </div>
-            </div>
-            <div className={styles.landingContents}>
-                <HomeCard
-                    title='Buy & Sell Drips Instantly'
-                    subTitle='Turn your style into success. Buy trending outfits or sell your fashion combinations instantly on our marketplace.'
-                    imageComponent={
-                        <Cart />
-                    }
-                />
-                <div className={styles.image}>
-                    <BuyImage />
+                <div className={styles.landingContents}>
+                    <HomeCard
+                        title='Buy & Sell Drips Instantly'
+                        subTitle='Turn your style into success. Buy trending outfits or sell your fashion combinations instantly on our marketplace.'
+                        imageComponent={
+                            <Cart />
+                        }
+                    />
+                    <div className={styles.image}>
+                        <BuyImage />
+                    </div>
                 </div>
+                <div className={styles.waitlistContent}>
+                    <CommunitySection />
+                </div>
+                <Footer />
             </div>
-            <div className={styles.waitlistContent}>
-                <CommunitySection />
-            </div>
-          <Footer />
         </div>
     )
 }

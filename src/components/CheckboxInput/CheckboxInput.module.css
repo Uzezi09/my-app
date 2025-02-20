@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 84;
+    line-height: 21px;
+    color: #71717A;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    appearance: none;
+    /* Removes default browser styles */
+    border: 1.8px solid #71717A;
+    cursor: pointer;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.checkbox:checked {
+    background: linear-gradient(0deg, #6600FF, #6600FF),
+        radial-gradient(58.43% 67.71% at 50% 59.38%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+
+.checkbox:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 1px;
+    left: 7px;
+}
