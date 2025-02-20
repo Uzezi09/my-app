@@ -4,6 +4,8 @@ import { InputField } from "../Input";
 import { Formik } from "formik";
 import { useState } from "react";
 import { WaitListHeader } from "../WaitListHeader";
+import * as Yup from 'yup';
+import { useNavigate } from "react-router-dom";
 
 const data = [
     "Join as a business owner",
@@ -11,11 +13,28 @@ const data = [
     "Join as a consumer"
 ]
 
+export const waitListSchema = Yup.object().shape({
+  firstName: Yup.string()
+    .required('First name is required')
+    .min(2, 'First name must be at least 2 characters'),
+
+  lastName: Yup.string()
+    .required('Last name is required')
+    .min(2, 'Last name must be at least 2 characters'),
+
+  email: Yup.string()
+    .required('Email is required')
+    .email('Invalid email address'),
+});
+
+
 export const WaitListForm = () => {
+    const navigate = useNavigate();
     const [checkItemes, setCheckedItems] = useState<string[]>([])
 
     const handleSubmit = (values: any) => {
         console.log("val", values, checkItemes);
+        navigate("/waitlist/success")
     };
 
     const handleCheckboxChange = (label: string, isChecked: boolean) => {
@@ -36,11 +55,14 @@ export const WaitListForm = () => {
                         email: ""
                     }}
                     onSubmit={handleSubmit}
+                    validationSchema={waitListSchema}
                 >
                     {({
                         values,
                         handleChange,
                         handleSubmit,
+                        touched,
+                        errors
                     }) => (
                         <form onSubmit={handleSubmit} className={styles.form}>
                             <WaitListHeader />
@@ -52,6 +74,7 @@ export const WaitListForm = () => {
                                         value={values.firstName}
                                         onChange={handleChange('firstName')}
                                         containerStyle={styles.input}
+                                        errorMessage={touched.firstName && errors.firstName ? errors.firstName : ""}
                                     />
                                     <InputField
                                         label="Last name"
@@ -59,6 +82,7 @@ export const WaitListForm = () => {
                                         value={values.lastName}
                                         onChange={handleChange('lastName')}
                                         containerStyle={styles.input}
+                                        errorMessage={touched.lastName && errors.lastName ? errors.lastName : ""}
                                     />
                                 </div>
                                 <InputField
@@ -66,6 +90,7 @@ export const WaitListForm = () => {
                                     placeholder="Email address"
                                     value={values.email}
                                     onChange={handleChange('email')}
+                                    errorMessage={touched.email && errors.email ? errors.email : ""}
                                 />
                             </div>
                             <div className={styles.checkboxFeild}>
@@ -93,6 +118,5 @@ export const WaitListForm = () => {
                 </Formik>
             </div>
         </div>
-
     );
 };

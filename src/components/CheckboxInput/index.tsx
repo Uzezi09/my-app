@@ -24,7 +24,7 @@ export const CheckboxInput = ({
 
     return (
         <div className={styles.container}>
-            <label> {label}</label>
+            <label>{label}</label>
             <input
                 type="checkbox"
                 name={name}

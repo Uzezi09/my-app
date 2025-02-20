@@ -1,3 +1,10 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px
+}
+
 .button {
     width: 100%;
     max-width: 481px;
@@ -29,6 +36,15 @@
     height: 35px;
 }
 
+.inputErrorMessage{
+    background: #FFF4F4;
+    border: 1px solid #F53535;
+}
+
+.inputError{
+    background: #FFF4F4;
+}
+
 .active {
     border: 1.6px solid #6600FF;
 }
@@ -53,4 +69,18 @@ label {
     line-height: 17px;
     color: #7F8493;
     text-transform: capitalize;
+}
+
+.errorContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+}
+
+.errormessage {
+    color: #F53535;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
 }

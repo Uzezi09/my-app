@@ -22,13 +22,6 @@
 .formWrapper {
     position: relative;
     z-index: 2;
-    /* Above overlay */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* width: 100%; */
- 
-    /* height: 100vh; */
 }
 
 .form {
@@ -42,16 +35,18 @@
     justify-content: center;
     padding-inline: 32px;
     padding-bottom: 24px;
-    max-height: 545px;
-    height: 100%;
-    overflow-y: hidden;
 }
 
-.buttonContainer{
+.image{
+    margin-inline: auto;
+}
+
+.buttonContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 32px;
 }
 
 .button {
@@ -67,39 +62,71 @@
     height: 52px;
 }
 
-.formInput {
+.cancelContainer {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.nameFeild {
-    display: flex;
-    /* justify-content: space-between; */
+    justify-content: flex-end;
     align-items: center;
-    gap: 20px;
-}
-
-.checkboxFeild{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
     padding-block: 16px;
 }
 
+.cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #0000000D;
+    backdrop-filter: blur(30px);
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 24px;
+    color: #71717A;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-top: 16px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    color: #0A0A0F;
+}
+
+.subText {
+    font-size: 16px;
+    font-weight: 84;
+    line-height: 24px;
+    color: #71717A;
+    text-align: center;
+    text-shadow: 0px 0px 1px 0px #0000002E;
+}
+
+
 @media (max-width: 450px) {
-    .formWrapper{
+    .formWrapper {
         background: #ffffff;
     }
+
     .form {
         margin: 0;
         border-radius: 0px;
-        padding-block:16px 300px;
+        padding-block: 16px 300px;
         padding-inline: 16px;
-        width: 100%; 
-        height: 100%; 
+        width: 100%;
+        height: 100%;
     }
-    .buttonContainer{
+
+    .buttonContainer {
         margin-top: 16px;
     }
 }
