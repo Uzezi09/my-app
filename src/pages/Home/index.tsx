@@ -26,11 +26,11 @@ export const Home = () => {
                         title='AI-Powered Style Analysis'
                         subTitle='Get personalized style insights and recommendations based on your preferences and fashion choices.'
                         imageComponent={
-                            <Star />
+                            <Star className={styles.icon}/>
                         }
                     />
                     <div className={styles.image}>
-                        <AiImage />
+                        <AiImage className={styles.svg}/>
                     </div>
                 </div>
                 <div className={styles.landingContents}>
@@ -38,11 +38,11 @@ export const Home = () => {
                         title='Smart Wardrobe'
                         subTitle='Get personalized style insights and recommendations based on your preferences and fashion choices.'
                         imageComponent={
-                            <SmartIcon />
+                            <SmartIcon className={styles.icon}/>
                         }
                     />
                     <div className={styles.image}>
-                        <SmartImage />
+                        <SmartImage className={styles.svg}/>
                     </div>
                 </div>
                 <div className={styles.landingContents}>
@@ -50,11 +50,11 @@ export const Home = () => {
                         title='Climb Leaderboards'
                         subTitle='Active creators earn bonus rewards and exclusive partnership opportunities.'
                         imageComponent={
-                            <ClimbIcon />
+                            <ClimbIcon className={styles.icon}/>
                         }
                     />
                     <div className={styles.image}>
-                        <ClimbImage />
+                        <ClimbImage className={styles.svg}/>
                     </div>
                 </div>
                 <div className={styles.landingContents}>
@@ -62,11 +62,11 @@ export const Home = () => {
                         title='Buy & Sell Drips Instantly'
                         subTitle='Turn your style into success. Buy trending outfits or sell your fashion combinations instantly on our marketplace.'
                         imageComponent={
-                            <Cart />
+                            <Cart className={styles.icon}/>
                         }
                     />
                     <div className={styles.image}>
-                        <BuyImage />
+                        <BuyImage className={styles.svg}/>
                     </div>
                 </div>
                 <div className={styles.waitlistContent}>

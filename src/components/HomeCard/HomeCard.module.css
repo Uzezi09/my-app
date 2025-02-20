@@ -30,5 +30,23 @@ p {
     line-height: 30px;
     text-align: left;
     color: #A1A1A1;
-    font-weight: 400;
+    font-weight: 84;
+}
+
+@media (max-width: 850px) {
+    .card {
+        gap: 16px;
+    }
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 20px;
+    }
 }

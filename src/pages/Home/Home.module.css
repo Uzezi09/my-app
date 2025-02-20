@@ -10,11 +10,12 @@
     justify-content: center;
     padding-block: 16px;
     /* background-color: red; */
-    z-index: 10; 
+    z-index: 10;
 }
 
 .heroContent {
-    padding-top: 80px; /* Adjust based on heroTop height */
+    padding-top: 80px;
+    /* Adjust based on heroTop height */
     overflow-y: auto;
 }
 
@@ -38,4 +39,44 @@
     border-radius: 100px;
     background: linear-gradient(0deg, rgba(102, 0, 255, 0.05), rgba(102, 0, 255, 0.05)),
         radial-gradient(58.43% 67.71% at 50% 59.38%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+@media (max-width: 850px) {
+    .image {
+        max-width: 333px;
+        padding: 0px 0px;
+        height: 562px;
+        border-radius: 40px;
+        background: "red"
+    }
+
+    .svg {
+        height: 501px;
+    }
+
+    .icon {
+        height: 21px;
+        width: 21px;
+    }
+
+    .landingContents {
+        padding: 80px 32px;
+        gap: 100px
+    }
+}
+
+@media (max-width: 760px) {
+    .landingContents {
+        flex-direction: column;
+    }
+
+    .image{
+        margin-inline: auto;
+    }
+}
+@media (max-width: 450px) {
+    .landingContents {
+        padding: 60px 16px;
+        gap: 44px
+    }
 }
