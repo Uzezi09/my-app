@@ -4,18 +4,17 @@
 .heroTop {
     position: fixed;
     top: 0;
-    left: 0;
+    /* left: 200px;
+    right: 200px; */
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-block: 16px;
+    /* padding: 16px 200px; */
     /* background-color: red; */
     z-index: 10;
 }
 
 .heroContent {
-    padding-top: 80px;
-    /* Adjust based on heroTop height */
     overflow-y: auto;
 }
 

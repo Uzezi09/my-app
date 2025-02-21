@@ -1,5 +1,6 @@
 import styles from './HeroSection.module.css';
 import { ReactComponent as CoinImage } from '../../assets/coin-image.svg';
+import { ReactComponent as MobileCoinImage } from '../../assets/coin.svg';
 import { ReactComponent as LightBall } from '../../assets/light-ball.svg';
 
 export const HeroSection = () => {
@@ -7,6 +8,9 @@ export const HeroSection = () => {
         <div className={styles.heroSection}>
             <div className={styles.heroSectionContent}>
                 <div className={styles.heroTopContent}>
+                    <div className={styles.coinImageTop}>
+                        <MobileCoinImage className={styles.imageTop} />
+                    </div>
                     <div className={styles.heroText}>
                         <div>
                             <h1 className={styles.heroTitle}>Earn from </h1>
@@ -16,13 +20,13 @@ export const HeroSection = () => {
                         <p className={styles.heroSubText}>Qwikdrip is an AI-powered fashion platform with the added benefit of earning tokens through style post engagement.</p>
                     </div>
                     <button className={styles.button}>Join early access</button>
-                    <p className={styles.heroSubText}>🔥 Join 10,000+ fashion enthusiasts already on the waitlist</p>
+                    <p className={styles.heroSubTextJoin}>🔥 Join 10,000+ fashion enthusiasts already on the waitlist</p>
                 </div>
                 <div className={styles.coinImage}>
-                    <CoinImage />
+                    <CoinImage className={styles.image} />
                 </div>
             </div>
-            <div  className={styles.lightBall}>
+            <div className={styles.lightBall}>
                 <LightBall />
             </div>
         </div>

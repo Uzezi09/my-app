@@ -3,28 +3,31 @@
 .heroSection {
     position: relative;
     width: 100%;
-    height: 100vh; 
+    min-height: 100vh;
+    /* Ensures it's at least 120vh but can grow */
     overflow: hidden;
     background: url('../../assets/hero-bg.svg') no-repeat center center;
     background-size: cover;
 }
-.heroSectionContent{
+
+.heroSectionContent {
     position: relative;
-    top: 20%;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-block: 20%; */
+    padding-top: 30%;
 }
 
 .heroTopContent {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 2; /* Ensures it stays above CoinImage */
+    z-index: 2;
+    /* Ensures it stays above CoinImage */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,6 +63,7 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
 .heroSpanH1 {
     background: url('../../assets/button-bg.jpg') no-repeat center center;
     -webkit-background-clip: text;
@@ -75,6 +79,16 @@
     color: #B6B6BF;
     text-align: center;
 }
+
+.heroSubTextJoin {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 84;
+    text-shadow: 0px 0px 1px 0px #0000002E;
+    color: #B6B6BF;
+    text-align: center;
+}
+
 .text {
     font-size: 14px;
     line-height: 21px;
@@ -110,20 +124,165 @@
     height: 52px;
 }
 
-.coinImage{
+.coinImageTop {
+    display: none;
+}
+
+.coinImage {
     position: relative;
+    top: -180px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .lightBall {
     position: absolute;
     bottom: 0;
     width: 100%;
-    z-index: 1; /* Behind all content */
+    z-index: 1;
+    /* Behind all content */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1300px) {
+    .image {
+        width: 950px;
+    }
+
+    .heroTopContent {
+        top: 60%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .heroSection {
+        min-height: 120vh;
+    }
+
+    .image {
+        width: 850px;
+    }
+}
+
+@media (max-width: 970px) {
+    .heroSection {
+        min-height: 120vh;
+    }
+
+    .heroSectionContent {
+        padding-top: 50%;
+    }
+
+    .image {
+        width: 800px;
+    }
+}
+
+@media (max-width: 865px) {
+    .heroSection {
+        min-height: 130vh;
+    }
+
+    .image {
+        width: 700px;
+    }
+}
+
+@media (max-width: 725px) {
+    .heroSection {
+        min-height: 150vh;
+    }
+
+    .coinImage {
+        display: none;
+    }
+
+    .heroTopContent {
+        position: relative;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .heroText {
+        max-width: 100%;
+    }
+
+    .heroSubText {
+        width: 340px;
+    }
+
+    .coinImageTop {
+        display: flex;
+        margin-bottom: -100px;
+    }
+
+    .imageTop {
+        width: 400px;
+    }
+
+    .heroTitle {
+        font-size: 45px;
+    }
+
+    .heroSubText {
+        font-size: 14px;
+    }
+
+    .heroSubTextJoin {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    .heroSection {
+        min-height: 170vh;
+    }
+
+    .heroTitle {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 590px) {
+    .heroSection {
+        min-height: 100vh;
+    }
+
+    .heroTopContent {
+        left: 45%;
+        width: 90%;
+    }
+
+    .imageTop {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 436px) {
+    .heroTopContent {
+        left: 48%;
+    }
+}
+
+@media (max-width: 376px) {
+    .heroTopContent {
+        left: 45%;
+    }
+}
+
+@media (max-width: 320px) {
+    .imageTop {
+        width: 250px;
+    }
+
+    .heroSubText {
+        width: 290px;
+    }
 }
