@@ -39,11 +39,11 @@ export const CommunitySection = () => {
                 </div>
             </div>
             <div className={styles.footSectionBeat}>
-                <BeatIcon />
+                <BeatIcon className={styles.beatIcon}/>
             </div>
             <div className={styles.footSectionCoins}>
-                <LeftIcon />
-                <RightIcon />
+                <LeftIcon className={styles.svgCoin}/>
+                <RightIcon className={styles.svgCoin}/>
             </div>
         </div>
     );

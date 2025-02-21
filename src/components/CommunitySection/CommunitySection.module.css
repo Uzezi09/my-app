@@ -24,7 +24,7 @@
     backdrop-filter: blur(300px);
     opacity: 0.8;
     /* Adjust as needed */
-    z-index: 1;
+    z-index: 2;
 }
 
 .footSectionContainer {
@@ -39,7 +39,7 @@
     text-align: center;
     font-weight: 700;
     line-height: 58px;
-    color: "#ffffff";
+    color: "#FFFFFF";
     padding-bottom: 16px;
     text-transform: uppercase;
 }
@@ -139,13 +139,90 @@
     width: 100%;
     bottom: 0;
     left: 0;
-    pointer-events: none; /* Optional: prevent interaction */
+    pointer-events: none;
+    /* Optional: prevent interaction */
 }
 
 .footSectionBeat {
-    position: absolute; /* Position inside footSection */
-    bottom: 0; /* Aligns to bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Perfect center alignment */
-    z-index: 0; /* Adjust if needed to place above or below other elements */
+    position: absolute;
+    /* Position inside footSection */
+    bottom: 0;
+    /* Aligns to bottom */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Perfect center alignment */
+    z-index: 0;
+    /* Adjust if needed to place above or below other elements */
+}
+
+@media (max-width: 850px) {
+    .footSection {
+        padding-top: 44px;
+        border-radius: 60px;
+    }
+
+    .footSectionStar {
+        left: 120px;
+    }
+
+    .footSectionCard {
+        max-width: 476px;
+        border-radius: 62px;
+    }
+
+    .svgCoin{
+        height: 256px;
+        width: 200px;
+    }
+
+    .footSectionContainer {
+        margin-bottom: 70px;
+    }
+
+    .sectionHeader {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 670px) {
+    .footSection {
+        border-radius: 32px;
+    }
+
+    .footSectionCard {
+        padding: 15px;
+    }
+
+    .footSectionStar {
+        left: -24px;
+    }
+
+    .beatIcon{
+        height: 300px;
+    }
+
+    .footSectionCard {
+        max-width: 456px;
+        border-radius: 62px;
+    }
+
+}
+
+@media (max-width: 541px) {
+    .footSectionCard {
+        max-width: 356px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footSectionCoins {
+        display: none;
+    }
+}
+
+@media (max-width: 407px) {
+    .footSectionCard {
+        max-width: 276px;
+    }
 }

@@ -63,9 +63,13 @@
         padding: 80px 32px;
         gap: 100px
     }
+
+    .waitlistContent {
+        padding: 0px 32px;
+    }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
     .landingContents {
         flex-direction: column;
     }
@@ -73,10 +77,18 @@
     .image{
         margin-inline: auto;
     }
+
+    .waitlistContent {
+        padding: 0px 0px;
+    }
 }
 @media (max-width: 450px) {
     .landingContents {
         padding: 60px 16px;
         gap: 44px
+    }
+
+    .waitlistContent {
+        padding: 0px 0px;
     }
 }
