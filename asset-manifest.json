@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.e7cf0d95.css",
-    "main.js": "/my-app/static/js/main.8baccacc.js",
+    "main.css": "/my-app/static/css/main.c6e6fea0.css",
+    "main.js": "/my-app/static/js/main.4196dcb2.js",
     "static/js/453.ed3810f9.chunk.js": "/my-app/static/js/453.ed3810f9.chunk.js",
+    "static/media/waitlist-bg.svg": "/my-app/static/media/waitlist-bg.aba81a299ebb7ecc19c0.svg",
+    "static/media/hero-bg.svg": "/my-app/static/media/hero-bg.8d92542e1578c0b4f4ec.svg",
     "static/media/buy-sell-image.svg": "/my-app/static/media/buy-sell-image.567052fd27d6381b48ea7f07f894fde2.svg",
     "static/media/wardobe-image.svg": "/my-app/static/media/wardobe-image.9b16782e9e2f0c57566291d00851fab7.svg",
     "static/media/ai-image-2.svg": "/my-app/static/media/ai-image-2.dacaa89a948b4496ad60a962d3af446a.svg",
@@ -18,16 +20,21 @@
     "static/media/telegram-icon.svg": "/my-app/static/media/telegram-icon.101b4acdd54b073d36a72e7b446a0fae.svg",
     "static/media/twitter-icon.svg": "/my-app/static/media/twitter-icon.826465ff130a93cf2d71091e4c61afd3.svg",
     "static/media/climb-image.svg": "/my-app/static/media/climb-image.6f42bab9f11d1a25682f53bb74d2a79c.svg",
+    "static/media/light-ball.svg": "/my-app/static/media/light-ball.4a134b54bb98012d985d594bfe1fbba1.svg",
+    "static/media/coin-image.svg": "/my-app/static/media/coin-image.43305c1c9a41c3990e4d61b065d1ab95.svg",
+    "static/media/coin.svg": "/my-app/static/media/coin.220ad5f175d8edd9fa2312bfda56b471.svg",
     "static/media/right-coin.svg": "/my-app/static/media/right-coin.957fb984e8f615ec049957ba54e7b7ad.svg",
     "static/media/left-coin.svg": "/my-app/static/media/left-coin.f65c13c718401f380d1addf0821878ff.svg",
+    "static/media/success-icon.svg": "/my-app/static/media/success-icon.ba7e6fbfb2882d8c2bbe2f5232e1151d.svg",
     "static/media/line-dot.svg": "/my-app/static/media/line-dot.15812b47b982de449f65c51f78c091b1.svg",
+    "static/media/error-icon.svg": "/my-app/static/media/error-icon.d85b9f5f3cbca38989cb5efee02cf252.svg",
     "index.html": "/my-app/index.html",
-    "main.e7cf0d95.css.map": "/my-app/static/css/main.e7cf0d95.css.map",
-    "main.8baccacc.js.map": "/my-app/static/js/main.8baccacc.js.map",
+    "main.c6e6fea0.css.map": "/my-app/static/css/main.c6e6fea0.css.map",
+    "main.4196dcb2.js.map": "/my-app/static/js/main.4196dcb2.js.map",
     "453.ed3810f9.chunk.js.map": "/my-app/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7cf0d95.css",
-    "static/js/main.8baccacc.js"
+    "static/css/main.c6e6fea0.css",
+    "static/js/main.4196dcb2.js"
   ]
 }
