@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+.landingPage {
+    background-color: #0A0A0F;
+}
 
 .heroTop {
     position: fixed;
@@ -73,7 +76,7 @@
         flex-direction: column;
     }
 
-    .image{
+    .image {
         margin-inline: auto;
     }
 
@@ -81,6 +84,7 @@
         padding: 0px 0px;
     }
 }
+
 @media (max-width: 450px) {
     .landingContents {
         padding: 60px 16px;
