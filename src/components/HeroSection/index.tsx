@@ -2,8 +2,11 @@ import styles from './HeroSection.module.css';
 import { ReactComponent as CoinImage } from '../../assets/coin-image.svg';
 import { ReactComponent as MobileCoinImage } from '../../assets/coin.svg';
 import { ReactComponent as LightBall } from '../../assets/light-ball.svg';
+import { useNavigate } from 'react-router-dom';
 
 export const HeroSection = () => {
+    const navigate = useNavigate();
+
     return (
         <div className={styles.heroSection}>
             <div className={styles.heroSectionContent}>
@@ -19,7 +22,7 @@ export const HeroSection = () => {
                         </div>
                         <p className={styles.heroSubText}>Qwikdrip is an AI-powered fashion platform with the added benefit of earning tokens through style post engagement.</p>
                     </div>
-                    <button className={styles.button}>Join early access</button>
+                    <button className={styles.button} onClick={()=> navigate('/waitlist')}>Join early access</button>
                     <p className={styles.heroSubTextJoin}>🔥 Join 10,000+ fashion enthusiasts already on the waitlist</p>
                 </div>
                 <div className={styles.coinImage}>
