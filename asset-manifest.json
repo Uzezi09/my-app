@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.73d3ba11.css",
-    "main.js": "/my-app/static/js/main.0f29c554.js",
+    "main.css": "/my-app/static/css/main.9eec7993.css",
+    "main.js": "/my-app/static/js/main.da4d5921.js",
     "static/js/453.ed3810f9.chunk.js": "/my-app/static/js/453.ed3810f9.chunk.js",
     "static/media/waitlist-bg.svg": "/my-app/static/media/waitlist-bg.aba81a299ebb7ecc19c0.svg",
     "static/media/hero-bg.svg": "/my-app/static/media/hero-bg.8d92542e1578c0b4f4ec.svg",
@@ -16,7 +16,6 @@
     "static/media/hanger-icon.svg": "/my-app/static/media/hanger-icon.a8b6e401a1e0fae8c10b0b87ba088541.svg",
     "static/media/solar-icon.svg": "/my-app/static/media/solar-icon.a243a37f22570bb0bb3b422bf951aad3.svg",
     "static/media/big-star-icon.svg": "/my-app/static/media/big-star-icon.95c521693e26587cda0b329e3eb30bfa.svg",
-    "static/media/instagram-icon.svg": "/my-app/static/media/instagram-icon.9e03bf4493bb7f3c7de925defb3e7410.svg",
     "static/media/telegram-icon.svg": "/my-app/static/media/telegram-icon.101b4acdd54b073d36a72e7b446a0fae.svg",
     "static/media/twitter-icon.svg": "/my-app/static/media/twitter-icon.826465ff130a93cf2d71091e4c61afd3.svg",
     "static/media/climb-image.svg": "/my-app/static/media/climb-image.6f42bab9f11d1a25682f53bb74d2a79c.svg",
@@ -29,12 +28,12 @@
     "static/media/line-dot.svg": "/my-app/static/media/line-dot.15812b47b982de449f65c51f78c091b1.svg",
     "static/media/error-icon.svg": "/my-app/static/media/error-icon.d85b9f5f3cbca38989cb5efee02cf252.svg",
     "index.html": "/my-app/index.html",
-    "main.73d3ba11.css.map": "/my-app/static/css/main.73d3ba11.css.map",
-    "main.0f29c554.js.map": "/my-app/static/js/main.0f29c554.js.map",
+    "main.9eec7993.css.map": "/my-app/static/css/main.9eec7993.css.map",
+    "main.da4d5921.js.map": "/my-app/static/js/main.da4d5921.js.map",
     "453.ed3810f9.chunk.js.map": "/my-app/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73d3ba11.css",
-    "static/js/main.0f29c554.js"
+    "static/css/main.9eec7993.css",
+    "static/js/main.da4d5921.js"
   ]
 }
