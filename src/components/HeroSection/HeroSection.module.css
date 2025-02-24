@@ -136,7 +136,20 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    animation: bendCoin 5s infinite ease-in-out;
+    transform-origin: center;
 }
+
+@keyframes bendCoin {
+    0%, 100% {
+        transform: perspective(800px) scaleY(1);
+    }
+    50% {
+        transform: perspective(800px) scaleY(1.2) skewY(5deg);
+    }
+}
+
+
 
 .lightBall {
     position: absolute;
