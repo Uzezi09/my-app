@@ -27,9 +27,8 @@ export const CommunitySection = () => {
                             <LineDot />
                         </div>
                         <div className={styles.socialIcons}>
-                            <SocialSocialCard imageComponent={<Instagram />} />
-                            <SocialSocialCard imageComponent={<TelegramIcon />} />
-                            <SocialSocialCard imageComponent={<TwitterIcon />} />
+                            <SocialSocialCard imageComponent={<TelegramIcon />} link='#' />
+                            <SocialSocialCard imageComponent={<TwitterIcon />} link='#' />
                         </div>
                         <p className={styles.join}>Join our community today</p>
                     </div>

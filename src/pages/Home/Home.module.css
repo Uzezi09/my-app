@@ -2,6 +2,7 @@
 
 .landingPage {
     background-color: #0A0A0F;
+    width: 100%;
 }
 
 .heroTop {
@@ -24,6 +25,7 @@
 .landingContents {
     display: flex;
     padding: 100px 140px;
+    justify-content: space-between;
     gap: 110px
 }
 
