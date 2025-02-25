@@ -3,22 +3,20 @@
 .landingPage {
     background-color: #0A0A0F;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .heroTop {
     position: fixed;
     top: 0;
-    /* left: 200px;
-    right: 200px; */
     width: 100%;
     display: flex;
     justify-content: center;
-    /* padding: 16px 200px; */
-    /* background-color: red; */
     z-index: 10;
 }
 
 .heroContent {
+    margin-top: 80px; /* Add margin to avoid overlap with fixed header */
     overflow-y: auto;
 }
 
@@ -26,32 +24,40 @@
     display: flex;
     padding: 100px 140px;
     justify-content: space-between;
-    gap: 110px
+    gap: 110px;
 }
 
 .waitlistContent {
-    padding: 0px 140px;
+    padding: 0 140px;
 }
 
 .image {
     width: 100%;
-    max-width: 550px;
+    max-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px;
-    border-radius: 100px;
+    padding: 19px 0;
+    border-radius: 60px;
     background: linear-gradient(0deg, rgba(102, 0, 255, 0.05), rgba(102, 0, 255, 0.05)),
-        radial-gradient(58.43% 67.71% at 50% 59.38%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 100%);
+                radial-gradient(58.43% 67.71% at 50% 59.38%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 100%);
 }
+
+.svg{
+    width: 355px;
+    height: 632px;
+}
+
+/* ✅ Responsive Styles */
 
 @media (max-width: 850px) {
     .image {
         max-width: 333px;
-        padding: 0px 0px;
+        padding: 20px 0;
         height: 562px;
         border-radius: 40px;
-        background: "red"
+        background: "red",
+        /* background: linear-gradient(0deg, rgba(102, 0, 255, 0.1), rgba(102, 0, 255, 0.1)); Fixed background */
     }
 
     .svg {
@@ -65,17 +71,19 @@
 
     .landingContents {
         padding: 80px 32px;
-        gap: 100px
+        gap: 80px;
     }
 
     .waitlistContent {
-        padding: 0px 32px;
+        padding: 0 32px;
     }
 }
 
 @media (max-width: 767px) {
     .landingContents {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .image {
@@ -83,17 +91,21 @@
     }
 
     .waitlistContent {
-        padding: 0px 0px;
+        padding: 0;
     }
 }
 
 @media (max-width: 450px) {
     .landingContents {
         padding: 60px 16px;
-        gap: 44px
+        gap: 44px;
+    }
+
+    .svg {
+        height: 350px;
     }
 
     .waitlistContent {
-        padding: 0px 0px;
+        padding: 0;
     }
 }
