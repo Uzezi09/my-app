@@ -16,7 +16,6 @@
 }
 
 .heroContent {
-    margin-top: 80px; /* Add margin to avoid overlap with fixed header */
     overflow-y: auto;
 }
 
