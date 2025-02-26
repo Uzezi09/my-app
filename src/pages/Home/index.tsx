@@ -14,12 +14,13 @@ import { CommunitySection } from '../../components/CommunitySection';
 import { Footer } from '../../components/Footer';
 import { HeroSection } from '../../components/HeroSection';
 import clsx from 'clsx';
-import { Animator, batch, Fade, FadeIn, FadeOut, Move, MoveOut, ScrollContainer, ScrollPage, StickyIn } from 'react-scroll-motion';
+import { Animator, batch, Fade, FadeIn, FadeOut, Move, MoveOut, ScrollContainer, ScrollPage, Sticky, StickyIn } from 'react-scroll-motion';
 
 
 export const Home = () => {
-    const FadeUp1 = batch(Fade(), Move(0, -50), FadeOut(), MoveOut(0, -200)); 
-    const FadeUp2 = batch(FadeIn(), Move(0, 300, 0.8), StickyIn(36, 50), FadeOut(), MoveOut(0, -200));
+    const FadeUp1 = batch(FadeIn(), Move(0, 300, 0.8), StickyIn(36, 90), FadeOut(0, 0), MoveOut(0, -100)); 
+    const FadeUp2 = batch(FadeIn(), Move(0, 300, 0.8), StickyIn(36, 50), FadeOut(0, 0), MoveOut(0, -200));
+
 
     return (
         <div className={styles.landingPage}>
@@ -33,8 +34,8 @@ export const Home = () => {
                 {/* ✅ Dynamic Sections */}
                 <ScrollContainer>
                     <ScrollPage>
-                        <Animator animation={FadeUp1} className={styles.content}>
-                            <div className={clsx(styles.landingContents)}>
+                        <Animator animation={FadeUp1}>
+                            <div className={clsx(styles.landingContents, styles.content)}>
                                 <HomeCard
                                     title='AI-Powered Style Analysis'
                                     subTitle='Get personalized style insights and recommendations based on your preferences and fashion choices.'
