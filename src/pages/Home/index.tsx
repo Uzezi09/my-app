@@ -18,8 +18,11 @@ import { Animator, batch, Fade, FadeIn, FadeOut, Move, MoveOut, ScrollContainer,
 
 
 export const Home = () => {
-    const FadeUp1 = batch(FadeIn(), Move(0, 300, 0.8), StickyIn(36, 90), FadeOut(0, 0), MoveOut(0, -100)); 
-    const FadeUp2 = batch(FadeIn(), Move(0, 300, 0.8), StickyIn(36, 50), FadeOut(0, 0), MoveOut(0, -200));
+    const FadeUp1 = batch( FadeIn(), Move(0, 300, 0.8), StickyIn(38, 100), FadeOut(0, 0), MoveOut(0, -50)); 
+    // const FadeUp1 = batch(StickyIn(36, 90),FadeIn(), Move(0, 300, 0.8),  FadeOut(0, 0), MoveOut(0, -200)); 
+    const FadeUp2 = batch(FadeIn(), Move(0, 300, 0.8), StickyIn(38, 60), FadeOut(0, 0), MoveOut(0, -50));
+    const FadeUp3 = batch( StickyIn(42, 60),FadeIn(), Move(0, 300, 0.8), FadeOut(0, 0), MoveOut(0, -50));
+    const FadeUp4 = batch(FadeIn(), Move(0, 300, 0.8), StickyIn(37, 60), FadeOut(0, 0), MoveOut(0, -200));
 
 
     return (
@@ -33,7 +36,7 @@ export const Home = () => {
 
                 {/* ✅ Dynamic Sections */}
                 <ScrollContainer>
-                    <ScrollPage>
+                    <ScrollPage >
                         <Animator animation={FadeUp1}>
                             <div className={clsx(styles.landingContents, styles.content)}>
                                 <HomeCard
@@ -63,7 +66,7 @@ export const Home = () => {
                     </ScrollPage>
 
                     <ScrollPage>
-                        <Animator animation={FadeUp2} >
+                        <Animator animation={FadeUp3} >
                             <div className={clsx(styles.landingContents, styles.content)}>
                                 <HomeCard
                                     title='Climb Leaderboards'
@@ -77,7 +80,7 @@ export const Home = () => {
                         </Animator>
                     </ScrollPage>
                     <ScrollPage>
-                        <Animator animation={FadeUp2} >
+                        <Animator animation={FadeUp4} >
                             <div className={clsx(styles.landingContents,styles.content)}>
                             <HomeCard
                                     title='Buy & Sell Drips Instantly'
