@@ -13,39 +13,22 @@ import { HomeCard } from '../../components/HomeCard';
 import { CommunitySection } from '../../components/CommunitySection';
 import { Footer } from '../../components/Footer';
 import { HeroSection } from '../../components/HeroSection';
+import clsx from 'clsx';
+import { useEffect, useRef } from 'react';
+import Lenis from "@studio-freight/lenis";
+import gsap from 'gsap';
+// @ts-ignore
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Animator, batch, Fade, FadeIn, FadeOut, Move, MoveOut, ScrollContainer, ScrollPage, Sticky, StickyIn } from 'react-scroll-motion';
+
 
 export const Home = () => {
-
-    const homeSections = [
-        {
-            title: 'AI-Powered Style Analysis',
-            subTitle: 'Get personalized style insights and recommendations based on your preferences and fashion choices.',
-            icon: <Star className={styles.icon} />,
-            image: <AiImage className={styles.svg} />
-        },
-        {
-            title: 'Smart Wardrobe',
-            subTitle: 'Organize and optimize your wardrobe with AI-driven recommendations.',
-            icon: <SmartIcon className={styles.icon} />,
-            image: <SmartImage className={styles.svg} />
-        },
-        {
-            title: 'Climb Leaderboards',
-            subTitle: 'Active creators earn bonus rewards and exclusive partnership opportunities.',
-            icon: <ClimbIcon className={styles.icon} />,
-            image: <ClimbImage className={styles.svg} />
-        },
-        {
-            title: 'Buy & Sell Drips Instantly',
-            subTitle: 'Turn your style into success. Buy trending outfits or sell your fashion combinations instantly on our marketplace.',
-            icon: <Cart className={styles.icon} />,
-            image: <BuyImage className={styles.svg} />
-        }
-    ];
+    const FadeUp1 = batch(Fade(), Move(0, -50), MoveOut(0, -200)); 
+    const FadeUp2 = batch(FadeIn(), Move(0, 300, 0.8), StickyIn(36, 50), MoveOut(0, -200));
+    const FadeUp4 = batch(FadeIn(), Move(0, 300, 0.8),StickyIn(36, 50), FadeOut(),  MoveOut(0, -200));
 
     return (
         <div className={styles.landingPage}>
-            {/* ✅ Hero Section */}
             <div className={styles.heroTop}>
                 <HeroInput />
             </div>
@@ -54,19 +37,66 @@ export const Home = () => {
                 <HeroSection />
 
                 {/* ✅ Dynamic Sections */}
-                {homeSections.map((section, index) => (
-                    <div key={index} className={styles.landingContents}>
-                        <HomeCard
-                            title={section.title}
-                            subTitle={section.subTitle}
-                            imageComponent={section.icon}
-                        />
-                        <div className={styles.image}>
-                            {section.image}
-                        </div>
-                    </div>
-                ))}
+                <ScrollContainer>
+                    <ScrollPage>
+                        <Animator animation={FadeUp1} className={styles.content}>
+                            <div className={clsx(styles.landingContents)}>
+                                <HomeCard
+                                    title='AI-Powered Style Analysis'
+                                    subTitle='Get personalized style insights and recommendations based on your preferences and fashion choices.'
+                                    imageComponent={<Star className={styles.icon} />}
+                                />
+                                <div className={styles.image}>
+                                    <AiImage className={styles.svg} />
+                                </div>
+                            </div>
+                        </Animator>
+                    </ScrollPage>
+                    <ScrollPage>
+                        <Animator animation={FadeUp2} >
+                            <div className={clsx(styles.landingContents, styles.content)}>
+                                <HomeCard
+                                    title='Smart Wardrobe'
+                                    subTitle='Organize and optimize your wardrobe with AI-driven recommendations.'
+                                    imageComponent={<SmartIcon className={styles.icon} />}
+                                />
+                                <div className={styles.image}>
+                                    <SmartImage className={styles.svg} />
+                                </div>
+                            </div>
+                        </Animator>
+                    </ScrollPage>
 
+                    <ScrollPage>
+                        <Animator animation={FadeUp2} >
+                            <div className={clsx(styles.landingContents, styles.content)}>
+                                <HomeCard
+                                    title='Buy & Sell Drips Instantly'
+                                    subTitle='Turn your style into success. Buy trending outfits or sell your fashion combinations instantly on our marketplace.'
+                                    imageComponent={<Cart className={styles.icon} />}
+                                />
+                                <div className={styles.image}>
+                                    <BuyImage className={styles.svg} />
+                                </div>
+                            </div>
+                        </Animator>
+                    </ScrollPage>
+                    <ScrollPage>
+                        <Animator animation={FadeUp4} >
+                            <div className={clsx(styles.landingContents,styles.content)}>
+                                <HomeCard
+                                    title=' Instantly'
+                                    subTitle='Turn your style into success. Buy trending outfits or sell your fashion combinations instantly on our marketplace.'
+                                    imageComponent={<Cart className={styles.icon} />}
+                                />
+                                <div className={styles.image}>
+                                    <BuyImage className={styles.svg} />
+                                </div>
+                            </div>
+                        </Animator>
+                    </ScrollPage>
+
+                </ScrollContainer>
                 {/* ✅ Community & Footer */}
                 <div className={styles.waitlistContent}>
                     <CommunitySection />
