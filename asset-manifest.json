@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.07b67bb3.css",
+    "main.css": "/my-app/static/css/main.b04f963b.css",
     "main.js": "/my-app/static/js/main.c900e9b1.js",
     "static/js/453.ed3810f9.chunk.js": "/my-app/static/js/453.ed3810f9.chunk.js",
     "static/media/waitlist-bg.svg": "/my-app/static/media/waitlist-bg.aba81a299ebb7ecc19c0.svg",
@@ -28,12 +28,12 @@
     "static/media/line-dot.svg": "/my-app/static/media/line-dot.15812b47b982de449f65c51f78c091b1.svg",
     "static/media/error-icon.svg": "/my-app/static/media/error-icon.d85b9f5f3cbca38989cb5efee02cf252.svg",
     "index.html": "/my-app/index.html",
-    "main.07b67bb3.css.map": "/my-app/static/css/main.07b67bb3.css.map",
+    "main.b04f963b.css.map": "/my-app/static/css/main.b04f963b.css.map",
     "main.c900e9b1.js.map": "/my-app/static/js/main.c900e9b1.js.map",
     "453.ed3810f9.chunk.js.map": "/my-app/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07b67bb3.css",
+    "static/css/main.b04f963b.css",
     "static/js/main.c900e9b1.js"
   ]
 }
