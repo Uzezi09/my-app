@@ -14,18 +14,12 @@ import { CommunitySection } from '../../components/CommunitySection';
 import { Footer } from '../../components/Footer';
 import { HeroSection } from '../../components/HeroSection';
 import clsx from 'clsx';
-import { useEffect, useRef } from 'react';
-import Lenis from "@studio-freight/lenis";
-import gsap from 'gsap';
-// @ts-ignore
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Animator, batch, Fade, FadeIn, FadeOut, Move, MoveOut, ScrollContainer, ScrollPage, Sticky, StickyIn } from 'react-scroll-motion';
+import { Animator, batch, Fade, FadeIn, FadeOut, Move, MoveOut, ScrollContainer, ScrollPage, StickyIn } from 'react-scroll-motion';
 
 
 export const Home = () => {
-    const FadeUp1 = batch(Fade(), Move(0, -50), MoveOut(0, -200)); 
-    const FadeUp2 = batch(FadeIn(), Move(0, 300, 0.8), StickyIn(36, 50), MoveOut(0, -200));
-    const FadeUp4 = batch(FadeIn(), Move(0, 300, 0.8),StickyIn(36, 50), FadeOut(),  MoveOut(0, -200));
+    const FadeUp1 = batch(Fade(), Move(0, -50), FadeOut(), MoveOut(0, -200)); 
+    const FadeUp2 = batch(FadeIn(), Move(0, 300, 0.8), StickyIn(36, 50), FadeOut(), MoveOut(0, -200));
 
     return (
         <div className={styles.landingPage}>
@@ -71,21 +65,21 @@ export const Home = () => {
                         <Animator animation={FadeUp2} >
                             <div className={clsx(styles.landingContents, styles.content)}>
                                 <HomeCard
-                                    title='Buy & Sell Drips Instantly'
-                                    subTitle='Turn your style into success. Buy trending outfits or sell your fashion combinations instantly on our marketplace.'
-                                    imageComponent={<Cart className={styles.icon} />}
+                                    title='Climb Leaderboards'
+                                    subTitle='Active creators earn bonus rewards and exclusive partnership opportunities.'
+                                    imageComponent={<ClimbIcon className={styles.icon} />}
                                 />
                                 <div className={styles.image}>
-                                    <BuyImage className={styles.svg} />
+                                    <ClimbImage className={styles.svg} />
                                 </div>
                             </div>
                         </Animator>
                     </ScrollPage>
                     <ScrollPage>
-                        <Animator animation={FadeUp4} >
+                        <Animator animation={FadeUp2} >
                             <div className={clsx(styles.landingContents,styles.content)}>
-                                <HomeCard
-                                    title=' Instantly'
+                            <HomeCard
+                                    title='Buy & Sell Drips Instantly'
                                     subTitle='Turn your style into success. Buy trending outfits or sell your fashion combinations instantly on our marketplace.'
                                     imageComponent={<Cart className={styles.icon} />}
                                 />

@@ -28,9 +28,10 @@ export const HeroSection = () => {
                 <div className={styles.coinImage}>
                     <CoinImage className={styles.image} />
                 </div>
-            </div>
+          
             <div className={styles.lightBall}>
                 <LightBall />
+            </div>
             </div>
         </div>
     );

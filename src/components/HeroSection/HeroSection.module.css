@@ -8,30 +8,36 @@
     overflow: hidden;
     background: url('../../assets/hero-bg.svg') no-repeat center center;
     background-size: cover;
+
+    justify-content: center;
+    align-items: center;
+    /* padding-inline: 120px; */
 }
 
 .heroSectionContent {
     position: relative;
-    top: 0;
+    top: 50%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 30%;
 }
 
 .heroTopContent {
-    position: absolute;
+    position: relative;
     top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
     text-align: center;
     z-index: 2;
     /* Ensures it stays above CoinImage */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px
+    gap: 24px;
+    padding-block: 200px;
+    padding-inline: 12px;
 }
 
 .heroText {
@@ -129,26 +135,27 @@
 }
 
 .coinImage {
-    position: relative;
-    top: -180px;
+     position: absolute;
+    /* top: 200px; */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    animation: bendCoin 5s infinite ease-in-out;
-    transform-origin: center;
+    animation: moveCoin 3s infinite ease-in-out alternate; 
 }
 
-@keyframes bendCoin {
-    0%, 100% {
-        transform: perspective(800px) scaleY(1);
+@keyframes moveCoin {
+    0% {
+        transform: translateY(0);
     }
     50% {
-        transform: perspective(800px) scaleY(1.2) skewY(5deg);
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
-
 
 
 .lightBall {
@@ -162,80 +169,39 @@
     align-items: center;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1250px) {
     .image {
         width: 950px;
     }
-
-    .heroTopContent {
-        top: 60%;
-    }
 }
 
-@media (max-width: 1000px) {
-    .heroSection {
-        min-height: 120vh;
-    }
-
+ @media (max-width: 1000px) {
     .image {
         width: 850px;
     }
 }
 
 @media (max-width: 970px) {
-    .heroSection {
-        min-height: 120vh;
+    .coinImage{
+        margin-top: -200px;
     }
-
-    .heroSectionContent {
-        padding-top: 50%;
-    }
-
     .image {
         width: 800px;
     }
 }
 
 @media (max-width: 865px) {
-    .heroSection {
-        min-height: 130vh;
-    }
-
     .image {
-        width: 700px;
+        width: 720px;
     }
 }
 
 @media (max-width: 725px) {
-    .heroSection {
-        min-height: 150vh;
+    .coinImage{
+        margin-top: -300px;
     }
-
-    .coinImage {
-        display: none;
-    }
-
-    .heroTopContent {
-        position: relative;
-        left: 30%;
-        transform: translate(-50%, -50%);
-    }
-
-    .heroText {
-        max-width: 100%;
-    }
-
-    .heroSubText {
-        width: 340px;
-    }
-
-    .coinImageTop {
-        display: flex;
-        margin-bottom: -100px;
-    }
-
-    .imageTop {
-        width: 400px;
+    .image {
+        width: 550px;
     }
 
     .heroTitle {
@@ -252,10 +218,6 @@
 }
 
 @media (max-width: 640px) {
-    .heroSection {
-        min-height: 170vh;
-    }
-
     .heroTitle {
         font-size: 40px;
         line-height: 48px;
@@ -263,34 +225,34 @@
 }
 
 @media (max-width: 590px) {
-    .heroSection {
-        min-height: 100vh;
+    .coinImage{
+        margin-top: -400px;
     }
-
-    .heroTopContent {
-        left: 45%;
-        width: 90%;
-    }
-
-    .imageTop {
-        width: 300px;
-    }
+    .image {
+        width: 400px;
+    } 
 
 }
 
-@media (max-width: 436px) {
-    .heroTopContent {
-        left: 48%;
+@media (max-width: 425px) {
+    .coinImage{
+        margin-top: -500px;
     }
+    .image {
+        width: 300px;
+    } 
 }
 
 @media (max-width: 376px) {
-    .heroTopContent {
-        left: 45%;
+    .coinImage{
+        margin-top: -600px;
     }
+    .image {
+        width: 250px;
+    } 
 }
 
-@media (max-width: 320px) {
+/*@media (max-width: 320px) {
     .imageTop {
         width: 250px;
     }
@@ -298,4 +260,4 @@
     .heroSubText {
         width: 290px;
     }
-}
+} */
